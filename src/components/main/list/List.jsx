@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useContext} from "react";
+import {ExpenseTrackerContext} from "../../../context/context"
 import {
   List as MUIList,
   ListItem,
@@ -14,30 +15,7 @@ import useStyles from "./styles.js";
 
 const List = () => {
   const classes = useStyles();
-
-  const transactions = [
-    {
-      id: 1,
-      type: "Income",
-      category: "Work",
-      amount: 100,
-      date: "Tue May 11",
-    },
-    {
-      id: 2,
-      type: "Expense",
-      category: "Shopping",
-      amount: 20,
-      date:"Tue May 13",
-    },
-    {
-        id: 3,
-        type: "Expense",
-        category: "Bills",
-        amount: 30,
-        date:"Tue May 14",
-      },
-  ];
+  const {deleteTransaction, transactions} = useContext(ExpenseTrackerContext)
 
   return (
     <div>
@@ -67,7 +45,7 @@ const List = () => {
                 secondary={`${transaction.amount} - ${transaction.date}`}
               />
               <ListItemSecondaryAction>
-                <IconButton edge="end" aria-label="delete" onClick="">
+                <IconButton edge="end" aria-label="delete" onClick={()=> deleteTransaction(transaction.id)}>
                   <Delete />
                 </IconButton>
               </ListItemSecondaryAction>
