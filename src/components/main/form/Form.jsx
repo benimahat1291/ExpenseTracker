@@ -9,7 +9,7 @@ import {incomeCategories, expenseCategories} from "../../../constants/categories
 const initialState = {
     amount: "",
     category: "",
-    type: "Income",
+    TypeOf: "Income",
     date: formatDate(new Date()),
 }
 
@@ -18,14 +18,14 @@ const Form = () => {
     const [formData, setFormData] = useState(initialState)
     const {addTransaction} = useContext(ExpenseTrackerContext)
 
-    
     const createTransaction = () => {
         const transaction = {...formData, amount: Number(formData.amount), id: uuidv4()};
         addTransaction(transaction);
         setFormData(initialState);
+        console.log('Transaction>>', transaction)
     }
 
-    const selectedCategories = formData.type === "Income" ? incomeCategories : expenseCategories;
+    const selectedCategories = formData.typeOf === "Income" ? incomeCategories : expenseCategories;
     
     return (
         <Grid container spacing={2}>
@@ -37,9 +37,9 @@ const Form = () => {
             <Grid item xs={6}>
                 <FormControl fullWidth>
                     <InputLabel>Types</InputLabel>
-                    <Select value={formData.type} onChange={(e)=> setFormData({...formData, type: e.target.value})}>
-                        <MenuItem value="Income">Income</MenuItem>
-                        <MenuItem value="Expense">Expense</MenuItem>
+                    <Select value={formData.typeOf}  onChange={(e)=> setFormData({...formData, typeOf: e.target.value})}>
+                        {console.log(formData.typeOf)}
+                        {["Income", "Expense"].map((t) => <MenuItem key={t} value={t}>{t}</MenuItem>)}
                     </Select>
                 </FormControl>
             </Grid>
