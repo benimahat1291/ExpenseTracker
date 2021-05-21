@@ -1,21 +1,31 @@
-.expenseTracker { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.expenseTracker__gird {
-    background-color: white;
-    height: 85vh;
-    width: 75vw;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+.expenseTracker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90vw;
+  margin: auto;
 }
 
 .expenceTracker__main {
-    grid-row: 1 / span 12;
-    grid-column: 1 / span 4;
-    
+    width: 100%;
+    display: flex;
+}
+
+.expenceTracker__speechly {
+  grid-row: 1 / span 2;
+  grid-column: 5 / span 12;
+}
+.expenceTracker__charts {
+  grid-row: 2 / span 11;
+  grid-column: 5 / span 13;
+  display: flex;
+  align-items: center;
+}
+
+.expenceTracker__income {
+  width: 50%;
+}
+.expenceTracker__expense {
+  width: 50%;
 }

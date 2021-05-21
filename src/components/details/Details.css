@@ -1,0 +1,15 @@
+.chartContainer {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 80%;
+    
+}
+
+
+.chartContainer__chart {
+    Width: 100%;
+}

@@ -3,28 +3,28 @@ import React from 'react'
 import Details from './components/details/Details'
 import Main from './components/main/Main'
 import "./App.css"
-import {ErrorPanel, PushToTalkButton, PushToTalkButtonContainer} from "@speechly/react-ui"
+import SpeechlyCard from './components/speechlyCard/SpeechlyCard'
+
 
 const App = () => {
 
     return (
 
         <div className="expenseTracker">
-            <div className="expenseTracker__gird">
                 <div className="expenceTracker__main">
-                    <Main/>
+                    <Main />
                 </div>
-                {/* <div>
-                    <Details title="Income" />
-                </div>
-                <div>
-                    <Details title="Expense"/>
+                {/* <div className="expenceTracker__speechly">
+                    <SpeechlyCard />
                 </div> */}
-            </div>
-            <PushToTalkButtonContainer>
-                <PushToTalkButton/>
-                <ErrorPanel/>
-            </PushToTalkButtonContainer>
+                {/* <div className="expenceTracker__charts">
+                    <div className="expenceTracker__income">
+                        <Details title="Income" />
+                    </div>
+                    <div className="expenceTracker__expense">
+                        <Details title="Expense" />
+                    </div>
+                </div> */}
         </div>
     )
 }

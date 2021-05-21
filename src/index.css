@@ -8,5 +8,32 @@ body {
 }
 
 .MuiListItemText-secondary {
-    color: white !important;
+    color: gray !important;
 }
+
+div .ZpnAN  {
+    position: static !important;
+    
+}
+
+div .sc-eCApnc {
+    height: 50% !important;
+    width: 50% !important;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+button span svg {
+    color: gray;
+    size: 100%;
+}
+button span svg:hover {
+    color: green;
+    size: 100%;
+}
+
+
+

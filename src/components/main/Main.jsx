@@ -1,37 +1,32 @@
 import React, { useContext } from "react";
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  Typography,
-  Divider,
-} from "@material-ui/core";
+import { CardHeader, Typography } from "@material-ui/core";
+import "./Main.css";
 import useStyles from "./styles";
 import Form from "./form/Form";
 import List from "./list/List";
 import { ExpenseTrackerContext } from "../../context/context";
-import { InfoCard } from "./form/InfoCard";
+import SpeechlyCard from "../speechlyCard/SpeechlyCard";
 
 const Main = () => {
   const classes = useStyles();
   const { balance } = useContext(ExpenseTrackerContext);
   return (
-    <div className={classes.card}>
-      <CardHeader title="Expense Tracker" subheader="Powered by Speechly" />
-      <div>
-        <Typography align="center" variant="h5">
-          {`Balance:  $${balance}`}
-        </Typography>
-        <Divider />
-        <Form />
-      </div>
-      <div className={classes.cardContent}>
-        <div>
-          <div>
-            <List />
-          </div>
+    <div className="main">
+      <div className="main__title">
+        <div className="main__cardHeader">
+          <CardHeader title="Expense Tracker" subheader="Powered by Speechly" />
+        </div>
+        {/* <Typography variant="h5">{`$${balance}`}</Typography> */}
+        <div className="main__speechlyCard">
+          <SpeechlyCard />
         </div>
       </div>
+
+      <div className="main__from">
+        <Form />
+      </div>
+
+      <div>{/* <List /> */}</div>
     </div>
   );
 };
