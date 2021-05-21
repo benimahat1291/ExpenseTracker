@@ -4,5 +4,9 @@
 }
 
 body {
-    background-color: rgb(236, 147, 162)
+    background-color: rgb(200, 205, 229)
+}
+
+.MuiListItemText-secondary {
+    color: white !important;
 }

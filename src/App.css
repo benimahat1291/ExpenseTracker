@@ -1,0 +1,21 @@
+.expenseTracker { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.expenseTracker__gird {
+    background-color: white;
+    height: 85vh;
+    width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.expenceTracker__main {
+    grid-row: 1 / span 12;
+    grid-column: 1 / span 4;
+    
+}
