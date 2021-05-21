@@ -26,10 +26,8 @@ const SpeechlyCard = () => {
           for {isIncome ? "Monday " : "Today "}"
         </div>
         <div>
-          <PushToTalkButtonContainer>
             <PushToTalkButton size="4rem" />
             <ErrorPanel />
-          </PushToTalkButtonContainer>
         </div>
       </div>
     </div>
