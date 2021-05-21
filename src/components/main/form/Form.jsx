@@ -169,8 +169,8 @@ const Form = () => {
       </div>
 
       
-
-      <IconButton
+    <div>
+         <IconButton
         className="from__button"
         variant="outlined"
         color="primary"
@@ -179,6 +179,8 @@ const Form = () => {
       >
         <CheckCircleOutlineIcon/>
       </IconButton>
+    </div>
+     
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React from 'react'
 import Details from './components/details/Details'
 import Main from './components/main/Main'
 import "./App.css"
-import SpeechlyCard from './components/speechlyCard/SpeechlyCard'
+import List from './components/main/list/List'
 
 
 const App = () => {
@@ -14,17 +14,18 @@ const App = () => {
                 <div className="expenceTracker__main">
                     <Main />
                 </div>
-                {/* <div className="expenceTracker__speechly">
-                    <SpeechlyCard />
-                </div> */}
-                {/* <div className="expenceTracker__charts">
+    
+                <div className="expenceTracker__charts">
                     <div className="expenceTracker__income">
                         <Details title="Income" />
                     </div>
-                    <div className="expenceTracker__expense">
+                    <div className="expenceTracker__list">
+                        <List/>
+                    </div>
+                    <div className="expenceTracker__expence">
                         <Details title="Expense" />
                     </div>
-                </div> */}
+                </div>
         </div>
     )
 }

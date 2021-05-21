@@ -11,7 +11,8 @@ export default makeStyles((theme) => ({
     backgroundColor: red[500],
   },
   list: {
-    maxHeight: '200px',
+    maxHeight: '270px',
     overflow: 'auto',
+    borderRadius: '10px'
   },
 }));

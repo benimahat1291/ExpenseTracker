@@ -9,16 +9,38 @@ import {
   ListItemSecondaryAction,
   IconButton,
   Slide,
+  Typography,
 } from "@material-ui/core";
 import { Delete, MoneyOff } from "@material-ui/icons";
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import useStyles from "./styles.js";
+import "./List.css"
+import AddIcon from "@material-ui/icons/Add";
+import RemoveIcon from "@material-ui/icons/Remove";
 
 const List = () => {
   const classes = useStyles();
-  const {deleteTransaction, transactions} = useContext(ExpenseTrackerContext)
+  const {deleteTransaction, transactions, balance} = useContext(ExpenseTrackerContext)
+
 
   return (
-    <div>
+    <div className="list">
+        <div className="list__header">
+        <Typography
+          variant="h5"
+          className="list__headerTitle"
+        >
+        Balance:
+        </Typography>
+        
+        <Typography
+          variant="h5"
+          className={balance < 0  ? "list__balanceNeg" : "list__balancePos"}
+        >
+         {balance < 0 ? <RemoveIcon/> : <AddIcon/>}
+        {balance < 0 ? (""+balance).split("").slice(1) : balance}
+        </Typography>
+        </div>
       <MUIList dense={false} className={classes.list}>
         {transactions.map((transaction) => (
           <Slide
@@ -37,7 +59,7 @@ const List = () => {
                       : classes.avatarExpense)
                   }
                 >
-                  <MoneyOff />
+                 {transaction.typeOf === "Income" ?  <AttachMoneyIcon/> : <MoneyOff />}
                 </Avatar>
               </ListItemAvatar>
               <ListItemText

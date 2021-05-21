@@ -26,14 +26,13 @@ div .sc-eCApnc {
     display: none;
   }
 
-button span svg {
+div button span svg {
     color: gray;
     size: 100%;
 }
-button span svg:hover {
+div button span svg:hover {
     color: green;
     size: 100%;
 }
-
 
 
