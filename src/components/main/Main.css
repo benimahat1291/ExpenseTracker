@@ -1,5 +1,4 @@
 .main {
-
     height: 100%;
     width: 100%;
     background: #fff;
@@ -7,32 +6,15 @@
 }
 
 
-.main__title { 
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main__content {
-    height: 80%;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
 .main__from {
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
 
-.main__cardHeader{
-    width: 20%;
-}
+
 
 .main__speechlyCard{
-    width: 80%;
+    width: 100%;
 }
 

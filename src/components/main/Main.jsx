@@ -12,9 +12,6 @@ const Main = () => {
   return (
     <div className="main">
       <div className="main__title">
-        <div className="main__cardHeader">
-          <CardHeader title="Expense Tracker" subheader="Powered by Speechly" />
-        </div>
         <div className="main__speechlyCard">
           <SpeechlyCard />
         </div>

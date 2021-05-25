@@ -1,43 +1,71 @@
 .speechlyCard {
     height: 100%;
+    margin: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.speechlyCard__cardHeader { 
+    height: 7rem;
+    width: 15rem;
+}
+
+
 .speechlyCard__textContainer {
     display: flex;
-    width: 50%;
     text-align: center;
 }
 
 .speechlyCard__button {
-    width: 32%;
     display: flex; 
     align-items: center;
     justify-content: space-between;
+    width: 15rem;
 }
 
 .speechlyCard__trySaying {
-    width: 60%;
     color: gray;
     font-style: italic;
     text-align: center;
+
 }
 
 .speechlyCard__voiceText {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 25rem;
     font-size: 1rem;
     font-style: italic;
     letter-spacing: 0.05rem ;
     text-align: center;
     font-family: 'Comic Neue', cursive;
+
 }
 
 button span .MuiSvgIcon-root {
     height: 3rem !important;
     width: 3rem !important;
 }
+
+@media screen and (max-width: 768px) {
+    .speechlyCard {
+        height: 100%;
+        margin: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .speechlyCard__button {
+        order: 2;
+    }
+    .speechlyCard__voiceText {
+        width: 100%;;
+        font-size: 1rem;
+        order: 3;
+    }
+}
+    
