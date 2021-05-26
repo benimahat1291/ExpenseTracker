@@ -2,13 +2,13 @@
   width: 300px;
   border: 2px solid whitesmoke;
   box-shadow: 0px 0px 10px whitesmoke;
+  border-radius: 10px;
 }
 
 .list__header {
   padding: 1rem 0 0.5rem 0;
   width: 100%;
   background-color: whitesmoke;
-  border-radius: 10px 10px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
