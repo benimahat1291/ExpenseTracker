@@ -1,20 +1,59 @@
 .main {
-    height: 100%;
-    width: 100%;
-    background: #fff;
-    border-radius: 10px;
+  margin: auto;
+  width: 80vw;
+  height: 90vh;
+  background: #fff;
+  border-radius: 10px;
 }
 
 
-.main__from {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+.main__speechlyCard {
+  width: 100%;
 }
 
 
 
-.main__speechlyCard{
-    width: 100%;
+.main__charts {
+    height: 23rem;
+    width: 95%;
+    margin: 1rem 0 1rem 1rem;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    overflow: scroll;
 }
 
+
+
+@media screen and (max-width: 1382px) {
+    .main__list {
+        order: 1;
+        width: 100%;
+    }
+    .main__expenceTrackerIncome {
+        order: 2;
+    }
+    .main__expenceTrackerExpence {
+        order: 3;
+    }
+    
+  }
+  
+@media screen and (max-width: 1024px) {
+  .main {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    height: auto;
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .main {
+    height: auto;
+  }
+}

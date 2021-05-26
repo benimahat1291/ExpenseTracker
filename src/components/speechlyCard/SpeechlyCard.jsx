@@ -14,9 +14,13 @@ const SpeechlyCard = () => {
 
   return (
     <div className="speechlyCard">
-         <div className="speechlyCard__cardHeader">
-          <CardHeader title="Expense Tracker" subheader="Hold Space to Speak" />
+      <div className="speechlyCard__cardHeader">
+        <CardHeader title="Expense Tracker" subheader="Hold Space to Speak" />
+        <div className="speechlyCard__buttonMobile">
+          <PushToTalkButton size="3rem" />
+          <ErrorPanel />
         </div>
+      </div>
       <div className="speechlyCard__voiceText">
         <p>{`"${
           segment && segment.words.map((word) => word.value).join(" ")
@@ -29,8 +33,8 @@ const SpeechlyCard = () => {
           in Category {isIncome ? "Salary " : "Bills "}
           for {isIncome ? "Monday " : "Today "}"
         </div>
-        <div >
-          <PushToTalkButton size="4rem" />
+        <div className="speechlyCard__buttonDesktop">
+          <PushToTalkButton size="3rem" />
           <ErrorPanel />
         </div>
       </div>
