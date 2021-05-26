@@ -55,7 +55,7 @@
   
   @media screen and (max-width: 850px) {
     .chartContainer {
-        width: 95%;    
+        width: 100%;    
     }
   }
   

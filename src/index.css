@@ -27,13 +27,26 @@ div .sc-eCApnc {
     display: none;
   }
 
-div button span svg {
+.form__button button span svg {
     color: gray;
-    size: 100%;
 }
-div button span svg:hover {
+.list__button button span svg {
+    color: gray;
+    opacity: 0.1;
+}
+
+
+
+.form__button button span svg:hover {
     color: green;
     size: 100%;
+ 
+}
+
+.list__button button span svg:hover {
+    color: red;
+    size: 100%;
+    opacity: 0.8;
 }
 
 

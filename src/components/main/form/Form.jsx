@@ -173,9 +173,8 @@ const Form = () => {
           </FormControl>
       </div>
 
-      <div>
+      <div className="form__button">
         <IconButton
-          className="from__button"
           variant="outlined"
           color="primary"
           fullwidth

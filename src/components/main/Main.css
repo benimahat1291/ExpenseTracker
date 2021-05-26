@@ -87,4 +87,9 @@
   .main {
     height: auto;
   }
+
+  .main__charts {
+    width: 100%;
+    margin: 0;
+  }
 }
