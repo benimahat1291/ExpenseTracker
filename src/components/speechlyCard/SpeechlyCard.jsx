@@ -15,7 +15,7 @@ const SpeechlyCard = () => {
   return (
     <div className="speechlyCard">
       <div className="speechlyCard__cardHeader">
-        <CardHeader title="Expense Tracker" subheader="Hold Space to Speak" />
+        <CardHeader title="Expense Tracker" subheader="Powered with Speechly" />
         <div className="speechlyCard__buttonMobile">
           <PushToTalkButton size="3rem" />
           <ErrorPanel />
