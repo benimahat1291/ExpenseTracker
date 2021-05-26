@@ -1,5 +1,7 @@
 .list {
-  width: 350px;
+  width: 300px;
+  border: 2px solid whitesmoke;
+  box-shadow: 0px 0px 10px whitesmoke;
 }
 
 .list__header {
@@ -36,7 +38,13 @@
   display: flex;
 }
 
-@media screen and (max-width: 1382px) {
+@media screen and (min-width: 1376px) {
+  #balance {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1376px) {
   .list {
     width: 100%;
     margin-bottom: 1rem;
