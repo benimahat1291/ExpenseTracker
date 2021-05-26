@@ -6,49 +6,80 @@
   border-radius: 10px;
 }
 
-
 .main__speechlyCard {
   width: 100%;
 }
 
-
-
 .main__charts {
-    height: 23rem;
-    width: 95%;
-    margin: 1rem 0 1rem 1rem;
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    overflow: scroll;
+  height: 23rem;
+  width: 95%;
+  margin: 1rem 0 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-
-
 @media screen and (max-width: 1382px) {
-    .main__list {
-        order: 1;
-        width: 100%;
-    }
-    .main__expenceTrackerIncome {
-        order: 2;
-    }
-    .main__expenceTrackerExpence {
-        order: 3;
-    }
-    
+  .main__list {
+    order: 1;
+    width: 100%;
   }
-  
+  .main__expenceTrackerIncome {
+    order: 2;
+  }
+  .main__expenceTrackerExpence {
+    order: 3;
+  }
+  .main__charts {
+    justify-content: space-around;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .main {
     width: 95vw;
   }
 }
 
+@media screen and (max-width: 850px) {
+    .main {
+      height: auto;
+      width: 95vw;
+    }
+    .main__expenceTrackerIncome {
+      width: 45%;
+    }
+    .main__expenceTrackerExpence {
+      width: 45%;
+    }
+    .main__charts {
+      height: 23rem;
+      width: 95%;
+      margin: 1rem 0 1rem 1rem;
+      display: flex;
+      justify-content: center;
+  
+    }
+  }
+
 @media screen and (max-width: 768px) {
   .main {
     height: auto;
     width: 95vw;
+  }
+  .main__expenceTrackerIncome {
+    width: 100%;
+  }
+  .main__expenceTrackerExpence {
+    width: 100%;
+  }
+  .main__charts {
+    height: 23rem;
+    width: 95%;
+    margin: 1rem 0 1rem 1rem;
+    display: flex;
+    justify-content: center;
+
   }
 }
 

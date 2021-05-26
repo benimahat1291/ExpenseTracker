@@ -46,3 +46,16 @@
     align-items: center;
     justify-content: flex-end;
 }
+
+@media screen and (max-width: 765px) {
+    .chartContainer {
+        width: 100%;    
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .chartContainer {
+        width: 95%;    
+    }
+  }
+  
